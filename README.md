@@ -25,31 +25,20 @@ pip install scikit-learn pandas numpy xgboost catboost
 
 Пример вывода:
 
-                              Model  Accuracy  Precision    Recall        F1  \
-0               Logistic Regression  0.809731   0.925619  0.850383  0.885439   
-1                    SGD Classifier  0.838509   0.921970  0.890383  0.904745   
-2          Random Forest Classifier  0.884845   0.887665  0.993333  0.937441   
-3      Gradient Boosting Classifier  0.858716   0.902709  0.940055  0.920095   
-4         Support Vector Classifier  0.876149   0.875126  1.000000  0.933375   
-5               K-Nearest Neighbors  0.876149   0.882274  0.990055  0.932859   
-6                XGBoost Classifier  0.899172   0.913608  0.976721  0.943951   
-7               CatBoost Classifier  0.884845   0.890346  0.990000  0.937336   
-8               AdaBoost Classifier  0.905010   0.924159  0.970164  0.946433   
-9   Quadratic Discriminant Analysis  0.861698   0.866697  0.993388  0.925699   
-10           Extra Trees Classifier  0.884845   0.887432  0.993388  0.937375   
+| Model                             | Accuracy | Precision | Recall  | F1       | ROC-AUC  |
+|-----------------------------------|----------|-----------|---------|----------|----------|
+| Logistic Regression               | 0.809731 | 0.925619  | 0.850383| 0.885439 | 0.699636 |
+| SGD Classifier                    | 0.838509 | 0.921970  | 0.890383| 0.904745 | 0.697413 |
+| Random Forest Classifier          | 0.884845 | 0.887665  | 0.993333| 0.937441 | 0.585556 |
+| Gradient Boosting Classifier      | 0.858716 | 0.902709  | 0.940055| 0.920095 | 0.634472 |
+| Support Vector Classifier         | 0.876149 | 0.875126  | 1.000000| 0.933375 | 0.533333 |
+| K-Nearest Neighbors               | 0.876149 | 0.882274  | 0.990055| 0.932859 | 0.561694 |
+| XGBoost Classifier                | 0.899172 | 0.913608  | 0.976721| 0.943951 | 0.682805 |
+| CatBoost Classifier               | 0.884845 | 0.890346  | 0.990000| 0.937336 | 0.595000 |
+| AdaBoost Classifier               | 0.905010 | 0.924159  | 0.970164| 0.946433 | 0.723971 |
+| Quadratic Discriminant Analysis   | 0.861698 | 0.866697  | 0.993388| 0.925699 | 0.496694 |
+| Extra Trees Classifier            | 0.884845 | 0.887432  | 0.993388| 0.937375 | 0.585583 |
 
-     ROC-AUC  
-0   0.699636  
-1   0.697413  
-2   0.585556  
-3   0.634472  
-4   0.533333  
-5   0.561694  
-6   0.682805  
-7   0.595000  
-8   0.723971  
-9   0.496694  
-10  0.585583  
 Средняя матрица ошибок для Logistic Regression:
 [[ 5.2  4. ]
  [ 9.8 50.4]]
